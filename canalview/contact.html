@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Contact us at Canal View B&amp;B</title>
+	<meta name="description" content="Copyright © 2015 Sebbe Isaac Kurian"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="css/style-20151210.css"/>
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+<body id="contact">
+	<header role="banner">
+		<h1>Canal View B&amp;B</h1>
+	</header>
+	<div class="wrapper">
+		<nav role="navigation">
+			<h2><a href="#menu">Menu &equiv;</a></h2> <!-- this anchor is for making the menu work in iphones -->
+			<ul aria-label="Website Navigation Menu">
+				<li><a href="index.html" class="home-page">Home</a></li>
+				<li><a href="rooms.html" class="rooms-page">Rooms</a></li>
+				<li><a href="prices.html" class="prices-page">Prices</a></li>
+				<li><a href="#" class="contact-page">Contact</a></li>
+				<li><a href="http://en.turismovenezia.it/" target="_blank" title="External Link: http://en.turismovenezia.it/" aria-label="External Link: http://en.turismovenezia.it/">Turismo Venezia</a></li>
+			</ul>
+		</nav>
+		<main role="main">
+			<section>
+				<h2>Contact Us</h2>
+				<form role="form" id="contact-form" name="contact-form" aria-label="Contact Us for Reservation or Enquiry" action="#" method="post">
+					<fieldset class="personal-info">
+						<legend>Personal Information</legend>
+						<ul>
+							<li>
+								<p><abbr title="Required">&#8727;</abbr> indicates Required information</p>
+							</li>
+							<li>
+								<label for="user-name">
+								<span id="enter-name">Enter Name: <abbr title="Required">&#8727;</abbr></span>
+								<input id="user-name" name="user-name" aria-labelledby="enter-name" type="text" maxlength="60" placeholder="Your Name" autofocus required/>
+								</label>
+							</li>
+							<li>
+								<label for="user-email">
+								<span id="enter-email">Enter Email: <abbr title="Required">&#8727;</abbr></span>
+								<input id="user-email" name="user-email" aria-labelledby="enter-email" type="email" maxlength="60" placeholder="Email Address" autocomplete="off" required/>
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset class="date-info">
+						<legend>Make a Reservation</legend>
+                        <ul>
+							<li>
+								<label for="arrive_day">
+								<span id="arr-date">Date of Arrival: </span>
+								<input id="arrive_day" name="arrive_day" aria-labelledby="arr-date" type="date"/>
+								</label>
+							</li>
+							<li>
+								<label for="depart_day">
+								<span id="dep-date">Departure Date: </span>
+								<input id="depart_day" name="depart_day" aria-labelledby="dep-date" type="date"/>
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Enquiry and Comments</legend>
+                        <ul>
+							<li>
+								<p>If you require additional information, or would like to give us any feedback, or suggestions - do tell us. We're listening. We welcome your views and comments.</p>
+							</li>
+							<li>
+								<label for="user-comments">
+								<span id="usr-comment">Enter Message:</span>
+								<textarea id="user-comments" name="user-comments" aria-labelledby="usr-comment" rows="5" maxlength="900" placeholder="Please share your Queries and Comments with us" spellcheck="true"></textarea>
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+					<ul class="form-buttons">
+						<li><button type="submit" aria-label="Submit Form">Submit</button></li>
+						<li><button type="reset" aria-label="Cancel Form">Cancel</button></li>
+					</ul>
+				</form>
+			</section>
+		</main>
+		<aside class="reviews" role="complementary">
+			<h2>Reviews</h2>
+			<p>"I just wanted to let you know what a wonderful time we had at your B-and-B. I have visited Venice many times, but yours is a wonderful place to stay, its my new favorite and I will be sure to recommend it to my fellow professors travelling in Venice. Venice may not have oysters, but your place is a pearl"<br/><span class="reviewed-by">- Brad Clarke</span></p>
+		</aside>
+		<aside class="additional-options" role="complementary">
+			<h2>Additional Options</h2>
+			<section class="language-selection">
+				<h3>Select Language</h3>
+				<ul aria-label="Select Your Language">
+					<li><a class="german" href="#" title="Deutsch" aria-label="Open our website in German">German</a></li>
+					<li><a class="french" href="#" title="Français" aria-label="Open our website in French">French</a></li>
+					<li><a class="hindi" href="#" title="हिन्दी" aria-label="Open our website in Hindi">Hindi</a></li>
+					<li><a class="chinese" href="#" title="中文" aria-label="Open our website in Chinese">Chinese</a></li>
+				</ul>
+			</section>
+			<section class="social-media">
+				<h3>Social Media Links</h3>
+				<ul aria-label="Social Media Links">
+					<li><a class="pinterest" href="#" title="Follow us in Pinterest" aria-label="Follow us in Pinterest">Pinterest</a></li>
+					<li><a class="twitter" href="#" title="Follow us in Twitter" aria-label="Follow us in Twitter">Twitter</a></li>
+					<li><a class="google" href="#" title="Connect to us via Google+" aria-label="Connect to us via Google Plus">Google Plus</a></li>
+					<li><a class="facebook" href="#" title="Like us in Facebook" aria-label="Like us in Facebook">Facebook</a></li>
+				</ul>
+			</section>
+		</aside>
+	</div>
+	<footer role="contentinfo">
+		<p>Copyright 2015 Canal View B&amp;B</p>
+	</footer>
+</body>
+</html>
