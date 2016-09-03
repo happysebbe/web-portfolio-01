@@ -1,0 +1,856 @@
+
+/************************************************************/
+/* CSS Reset ************************************************/
+/************************************************************/
+
+html {
+	font-size: 100%;
+}
+
+html, body, header, footer, nav, main, section, div, h1, h2, h3, h4, p, figure, figcaption, img, ul, li, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+header, footer, nav, main, section, figure {
+	display: block;
+}
+
+img, ul, li, a, nav {
+	box-sizing: border-box;
+}
+
+@-ms-viewport	{ width: device-width; }
+@viewport		{ width: device-width; }
+
+/************************************************************/
+/* Common Settings ******************************************/
+/************************************************************/
+
+body {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	color: #000000;
+	background-color: #EDEDED; /* fallback */
+	background-repeat: repeat;
+	background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAALgAA/+4ADkFkb2JlAGTAAAAAAf/bAIQACgcHBwcHCgcHCg4JCAkOEAwKCgwQEw8PEA8PExIOEA8PEA4SEhUWFxYVEh0dHx8dHSkpKSkpLy8vLy8vLy8vLwEKCQkKCwoNCwsNEA0ODRAUDg4ODhQXDw8RDw8XHRUSEhISFR0aHBcXFxwaICAdHSAgKCgmKCgvLy8vLy8vLy8v/8AAEQgAMgAyAwEiAAIRAQMRAf/EAFkAAQEBAAAAAAAAAAAAAAAAAAABBwEBAAAAAAAAAAAAAAAAAAAAABAAAQQBBQEBAQAAAAAAAAAAAAERIUEx8FFxgaFhwdERAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANMeirCkZJtw2wAK9IWnXkgDTl+ZJLFWWAa6AfkAM8EuciFyFAI2HcqbWR2ItJh6AsXIfwPlUHgB9foDoAGIRbLBHw1zpisBJTgYLzYd0Ak7QmAFhXeAqovQCfu+QGXb0AK6sV0ABd9JkJhMdgAS16yEvnsAB/AAB//Z);
+}
+
+/************************************************************/
+/* Header ***************************************************/
+/************************************************************/
+
+header {
+	width: 100%; /* Need to specify W because of Fixed Positioning */
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	/* Need to specify background-color because of Fixed Positioning ***/
+	/* Otherwise the Content background overlays header when scrolling */
+	background-color: #EDEDED; /* fallback */
+	background-repeat: repeat;
+	background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAALgAA/+4ADkFkb2JlAGTAAAAAAf/bAIQACgcHBwcHCgcHCg4JCAkOEAwKCgwQEw8PEA8PExIOEA8PEA4SEhUWFxYVEh0dHx8dHSkpKSkpLy8vLy8vLy8vLwEKCQkKCwoNCwsNEA0ODRAUDg4ODhQXDw8RDw8XHRUSEhISFR0aHBcXFxwaICAdHSAgKCgmKCgvLy8vLy8vLy8v/8AAEQgAMgAyAwEiAAIRAQMRAf/EAFkAAQEBAAAAAAAAAAAAAAAAAAABBwEBAAAAAAAAAAAAAAAAAAAAABAAAQQBBQEBAQAAAAAAAAAAAAERIUEx8FFxgaFhwdERAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANMeirCkZJtw2wAK9IWnXkgDTl+ZJLFWWAa6AfkAM8EuciFyFAI2HcqbWR2ItJh6AsXIfwPlUHgB9foDoAGIRbLBHw1zpisBJTgYLzYd0Ak7QmAFhXeAqovQCfu+QGXb0AK6sV0ABd9JkJhMdgAS16yEvnsAB/AAB//Z);
+}
+
+/************************************************************/
+/* The Wrappers *********************************************/
+/************************************************************/
+
+.header-wrapper {
+	margin: 0.5rem 1% 0 1%;
+}
+
+@media all and (min-width: 30rem) {
+.header-wrapper {
+	margin: 0.5rem auto 0 auto;
+	width: 95%;
+	max-width: 55rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+.header-wrapper {
+	width: 85%;
+}
+}
+
+@media all and (min-width: 43rem) {
+.header-wrapper {
+	margin-top: 1.5rem;
+}
+}
+
+@media all and (min-width: 50rem) {
+.header-wrapper {
+	width: 77%;
+}
+}
+
+@media all and (min-width: 55rem) {
+.header-wrapper {
+	margin-top: 2rem;
+}
+}
+
+/************************************************************/
+
+.header-bottom {
+	height: 1rem;
+	border-bottom: 2px solid #AAAAAA;
+}
+
+@media all and (min-width: 43rem) {
+.header-bottom {
+	height: 1.5rem;
+	border-bottom: 3px solid #AAAAAA;
+	clear: both; /* Clearing the float of h1 and nav */
+}
+}
+
+@media all and (min-width: 55rem) {
+.header-bottom {
+	height: 2rem;
+}
+}
+
+/************************************************************/
+
+.content-wrapper, .footer-wrapper {
+	margin: 0 1%;
+}
+
+@media all and (min-width: 30rem) {
+.content-wrapper, .footer-wrapper {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 55rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+.content-wrapper, .footer-wrapper {
+	width: 85%;
+}
+}
+
+@media all and (min-width: 50rem) {
+.content-wrapper, .footer-wrapper {
+	width: 77%;
+}
+}
+
+/************************************************************/
+/* The Headings h1 h2 h3 h4 *********************************/
+/************************************************************/
+
+h1 {
+	color: #00508B;
+	font-size: 1.2rem;
+	line-height: 1.6;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: -1px -1px 1px #FFFFFF;
+	word-spacing: 0.5rem;
+}
+
+@media all and (min-width: 25rem) {
+h1 {
+	font-size: 1.4rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+h1 {
+	font-size: 1.8rem;
+}
+}
+
+@media all and (min-width: 43rem) {
+h1 {
+	width: 48%;
+ 	float: left;
+	line-height: 2;
+	text-align: left;
+}
+}
+
+@media all and (min-width: 55rem) {
+h1 {
+	font-size: 2rem;
+}
+}
+
+/************************************************************/
+
+/* Hiding the visibility of h2 level Headings */
+/* h2 is accessible to Screen Readers and other Assistive Techs */
+/* h2 is used here to maintain consistent Content Hierarchy */
+
+h2 {
+	line-height: 0;
+	border: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/************************************************************/
+
+h3 {
+	color: #00508B;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	text-align: center;
+	border-bottom: 1px solid #00508B;
+}
+
+@media all and (min-width: 25rem) {
+h3 {
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+}
+
+@media all and (min-width: 37rem) {
+h3 {
+	font-size: 1.8rem;
+	line-height: 2;
+}
+}
+
+@media all and (min-width: 50rem) {
+h3 {
+	font-size: 2rem;
+}
+}
+
+/************************************************************/
+
+h4 {
+	margin-top: 1rem;
+	color: #000000;
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+@media all and (min-width: 18rem) {
+h4 {
+	font-size: 1rem;
+}
+}
+
+@media all and (min-width: 25rem) {
+h4 {
+	font-size: 1.2rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+h4 {
+	margin-top: 1.5rem;
+}
+}
+
+@media all and (min-width: 50rem) {
+h4 {
+	font-size: 1.4rem;
+	color: #222222;
+}
+}
+
+/************************************************************/
+/* Site Navigation ******************************************/
+/************************************************************/
+
+nav {
+	text-align: center;
+}
+
+@media all and (min-width: 43rem) {
+nav {
+	width: 50%;
+ 	float: right;
+}
+}
+
+/************************************************************/
+
+nav ul {
+	list-style-type: none;
+}
+
+/************************************************************/
+
+li.project-select-button {
+	width: 31%;
+	display: inline-block;
+}
+
+/************************************************************/
+
+.project-select-button a {
+	display: inline-block;
+	width: 100%;
+	border-radius: 0.5rem;
+	border: 2px solid #00508B;
+	background-color: #EDEDED; /* fallback */
+	background-image: -webkit-linear-gradient(#FCFCFC, #AAAAAA); /* for old Andriods */
+	background-image:         linear-gradient(#FCFCFC, #AAAAAA);
+	color: #000000;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	font-size: 1rem;
+	line-height: 2.4;
+	font-weight: bold;
+	text-align: center;
+}
+
+.project-select-button a:hover, .project-select-button a:focus {
+	border-radius: 0;
+	outline: 2px solid #00508B;
+}
+
+.project-select-button a:active {
+	background-image: none;
+	background-color: #999999;
+	color: #999999;
+	text-shadow: 0 0;
+	border-radius: 0.5rem;
+	outline: 0;
+}
+
+@media all and (min-width: 37rem) {
+.project-select-button a {
+	font-size: 1.2rem;
+}
+}
+
+@media all and (min-width: 43rem) {
+.project-select-button a {
+	font-size: 1.6rem;
+	line-height: 2.2;
+}
+}
+
+@media all and (min-width: 55rem) {
+.project-select-button a {
+	font-size: 1.8rem;
+}
+}
+
+/************************************************************/
+/* Content Area Buffers *************************************/
+/************************************************************/
+
+/* Need Buffers with specified height because of Fixed Positioning of Header */
+
+.content-buffer {
+	height: 5.8rem;
+}
+
+@media all and (min-width: 25rem) {
+.content-buffer {
+	height: 6rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+.content-buffer {
+	height: 7rem;
+}
+}
+
+@media all and (min-width: 43rem) {
+.content-buffer {
+	height: 6.4rem;
+}
+}
+
+@media all and (min-width: 55rem) {
+.content-buffer {
+	height: 7.8rem;
+}
+}
+
+/************************************************************/
+
+.content-buffer-filler {
+	height: 4.4rem;
+	background-color: #FFFFFF;
+	border-radius: 0 0 0.3rem 0.3rem;
+	border: 1px solid #CCCCCC;
+	border-top: 0;
+	border-bottom-width: 2px;
+}
+
+@media all and (min-width: 25rem) {
+.content-buffer-filler {
+	height: 4rem;
+}
+}
+
+@media all and (min-width: 43rem) {
+.content-buffer-filler {
+	height: 3.4rem;
+	border-bottom-width: 3px;
+}
+}
+
+@media all and (min-width: 55rem) {
+.content-buffer-filler {
+	height: 3.8rem;
+}
+}
+
+/************************************************************/
+/* The Content Area *****************************************/
+/************************************************************/
+
+.project-info {
+	padding: 1% 5% 0 5%;
+	background-color: #FFFFFF;
+	border-radius: 0.3rem 0.3rem 0 0;
+	border: 1px solid #CCCCCC;
+	border-top: 2px solid #AAAAAA;
+	border-bottom: 0;
+}
+
+@media all and (min-width: 25rem) {
+.project-info {
+	padding: 1% 6% 0 6%;
+}
+}
+
+@media all and (min-width: 30rem) {
+.project-info {
+	padding: 1% 7% 0 7%;
+}
+}
+
+@media all and (min-width: 37rem) {
+.project-info {
+	padding: 1% 8% 0 8%;
+}
+}
+
+@media all and (min-width: 43rem) {
+.project-info {
+	border-top-width: 3px;
+}
+}
+
+@media all and (min-width: 50rem) {
+.project-info {
+	padding: 1% 9% 0 9%;
+}
+}
+
+/************************************************************/
+/* Content Text Settings ************************************/
+/************************************************************/
+
+.project-info p {
+	margin: 0.5rem 0 1rem 0;
+	color: #000000;
+	font-size: 0.8rem;
+	line-height: 1.6;
+	text-indent: 1rem;
+}
+
+@media all and (min-width: 18rem) {
+.project-info p {
+	font-size: 0.9rem;
+	text-indent: 1.5rem;
+}
+}
+
+@media all and (min-width: 25rem) {
+.project-info p {
+	margin: 0.5rem 0 1.5rem 0;
+	font-size: 1rem;
+	text-indent: 2rem;
+}
+}
+
+@media all and (min-width: 30rem) {
+.project-info p {
+	text-align: justify;
+}
+}
+
+@media all and (min-width: 37rem) {
+.project-info p {
+	margin: 1rem 0 2.5rem 0;
+}
+}
+
+@media all and (min-width: 43rem) {
+.project-info p {
+	font-size: 1.1rem;
+	text-indent: 2.5rem;
+	color: #222222;
+}
+}
+
+@media all and (min-width: 55rem) {
+.project-info p {
+	font-size: 1.2rem;
+	text-indent: 3rem;
+	color: #444444;
+}
+}
+
+/************************************************************/
+
+.project-info span {
+	background-color: #EFEFEF;
+}
+
+/************************************************************/
+/* The following settings for P:First-Of-Type is used to ****/
+/* Reduce the Gap between the 2 paras under Project Notes ***/
+/* by making the margin-bottom less. ************************/
+/* Caution: This will not work as intented if the number ****/
+/* of Paragraphs change from the current 2+1=3 pattern. *****/
+
+.project-info p:first-of-type {
+	margin-bottom: 0.5rem;
+}
+
+@media all and (min-width: 25rem) {
+.project-info p:first-of-type {
+	margin-bottom: 1rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+.project-info p:first-of-type {
+	margin-bottom: 1.5rem;
+}
+}
+
+/************************************************************/
+/* Styling the Links embedded in the content ****************/
+/************************************************************/
+
+.content-link:link, .content-link:visited {
+	color: #0000FF;
+}
+
+.content-link:hover, .content-link:focus {
+	outline: 2px solid #00508B;
+}
+
+.content-link:active {
+	background-color: #999999;
+	color: #999999;
+	outline: 0;
+}
+
+/************************************************************/
+/* Content Figure and Image Settings ************************/
+/************************************************************/
+
+figure {
+	margin: 1rem 0 1rem 0;
+}
+
+@media all and (min-width: 25rem) {
+figure {
+	margin: 1.5rem 0 1.5rem 0;
+}
+}
+
+@media all and (min-width: 37rem) {
+figure {
+	margin: 1.5rem 0 2.5rem 0;
+}
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 800px; /* The exact width of the PNG image */
+	background-color: #FFFFFF;
+}
+
+figcaption {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	font-style: italic;
+	color: #00508B;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+@media all and (min-width: 18rem) {
+figcaption {
+	font-size: 0.9rem;
+}
+}
+
+@media all and (min-width: 25rem) {
+figcaption {
+	font-size: 1rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+figcaption {
+	line-height: 1.6;
+	padding-bottom: 0.5rem;
+}
+}
+
+@media all and (min-width: 43rem) {
+figcaption {
+	font-size: 1.1rem;
+}
+}
+
+@media all and (min-width: 55rem) {
+figcaption {
+	font-size: 1.2rem;
+}
+}
+
+/************************************************************/
+/* Navigating Up-and-Down for Reading and Skipping **********/
+/************************************************************/
+
+.go-up-down {
+	margin: 0.5rem 5%;
+	font-size: 0.8rem;
+	text-align: right;
+}
+
+.go-up-down a:link, .go-up-down a:visited {
+	color: #0000FF;
+}
+
+.go-up-down a:hover, .go-up-down a:focus {
+	font-weight: bold;
+	outline: 2px solid #00508B;
+}
+
+.go-up-down a:active {
+	background-color: #999999;
+	color: #999999;
+	outline: 0;
+}
+
+@media all and (min-width: 18rem) {
+.go-up-down {
+	font-size: 0.9rem;
+}
+}
+
+@media all and (min-width: 25rem) {
+.go-up-down {
+	font-size: 1rem;
+}
+}
+
+@media all and (min-width: 37rem) {
+.go-up-down {
+	margin-top: 1rem;
+}
+}
+
+@media all and (min-width: 43rem) {
+.go-up-down {
+	font-size: 1.1rem;
+}
+}
+
+@media all and (min-width: 55rem) {
+.go-up-down {
+	font-size: 1.2rem;
+}
+}
+
+/************************************************************/
+/* Button for Opening the Projects **************************/
+/************************************************************/
+
+.project-view-button a {
+	display: block;
+	margin: 2rem 5% 0 5%;
+	width: 90%;
+	border-radius: 0.5rem;
+	border: 2px solid #00508B;
+	background-color: #EDEDED; /* fallback */
+	background-image: -webkit-linear-gradient(#FCFCFC, #AAAAAA); /* for old Andriods */
+	background-image:         linear-gradient(#FCFCFC, #AAAAAA);
+	color: #000000;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	font-size: 1rem;
+	line-height: 2.4;
+	font-weight: bold;
+	text-align: center;
+}
+
+.project-view-button a:hover, .project-view-button a:focus {
+	border-radius: 0;
+	outline: 2px solid #00508B;
+}
+
+.project-view-button a:active {
+	background-image: none;
+	background-color: #999999;
+	color: #999999;
+	text-shadow: 0 0;
+	border-radius: 0.5rem;
+	outline: 0;
+}
+
+@media all and (min-width: 37rem) {
+.project-view-button a {
+	margin-top: 3rem;
+	font-size: 1.1rem;
+	line-height: 2.8;
+}
+}
+
+@media all and (min-width: 55rem) {
+.project-view-button a {
+	font-size: 1.2rem;
+	line-height: 3;
+}
+}
+
+/************************************************************/
+/* The Footer ***********************************************/
+/************************************************************/
+
+.footer-wrapper {
+	padding-top: 1rem;
+}
+
+@media all and (min-width: 50rem) {
+.footer-wrapper {
+	padding-top: 1.5rem;
+}
+}
+
+/************************************************************/
+/* Social Media Links ***************************************/
+/************************************************************/
+
+.social-media {
+	list-style-type: none;
+	text-align: center;
+}
+
+@media all and (min-width: 37rem) {
+.social-media {
+	margin-bottom: 1.5rem;
+	width: 55%;
+ 	float: left;
+	text-align: left;
+}
+}
+
+@media all and (min-width: 50rem) {
+.social-media {
+	margin-bottom: 2rem;
+}
+}
+
+/************************************************************/
+
+.social-media li {
+	margin: 0.2rem;
+	display: inline-block;
+}
+
+/************************************************************/
+
+.social-media a {
+	display: inline-block;
+	width: 3rem;
+	height: 2.5rem;
+	border-radius: 0.3rem;
+	border: 1px solid #AAAAAA;
+	color: #00508B;
+	background-color: #EDEDED;
+	background-repeat: no-repeat;
+	background-position: center; /* for those who don't support background-size */
+	background-size: cover;
+	/* hiding the text */
+	line-height: 0;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.social-media a:hover, .social-media a:focus {
+	border-radius: 0;
+	outline: 2px solid #00508B;
+}
+
+.social-media a:active {
+	color: #999999;
+	background-color: #999999;
+	background-image: none;
+	border-radius: 0.3rem;
+	outline: 0;
+}
+
+.social-media a.facebook { /* Data URI */
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyBAMAAADy2KUxAAAAIVBMVEUAAAAAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIvrul8UAAAACnRSTlMA369QQO+PgHAgDSQ0pgAAAEhJREFUOMtjGAWDHLBorVqFRzprFT5pjlV4pRnxS89atSoYj9Vcq1YZ4JfGI7sKDPBLL8QvvQi/9HL80ksIuHxUmvrSo2BwAwCneDKraBDH7gAAAABJRU5ErkJggg==);
+}
+
+.social-media a.twitter { /* Data URI */
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyCAMAAAA3KEgwAAAAM1BMVEUAAAAAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsS8XpqAAAAEHRSTlMAvxCf78+vj4BQMCBwYEDfBGmybQAAAKJJREFUSMft0LsOwyAMheFjc4dA/P5P2zRSSFQ6mKVL+RamXwcZy7L8j2TI1+PlApWYcWGSN1eDbVAR22sjl5BYF4tNOBW5GeXywRcctukWTs68FsTeOiilq7CuxwSd5pwMApTkiw1KRkYZSjx+e4caD9sRakk+WIYezZ/rxl6ePOZkks4xpjTz2OWZUxNZ6WzElLrfaSiYlbdARCY2LMvyUy+0RRGhi7AAxQAAAABJRU5ErkJggg==);
+}
+
+.social-media a.linkedin { /* Data URI */
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyBAMAAADy2KUxAAAAJ1BMVEUAAAAAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIuGJNGGAAAADHRSTlMAQJ/fIL/vMM+vj2C2HBHaAAAAYUlEQVQ4y2MYBUMXsKiq4JNmPnMYn7TMmTMCZEgjDCfkNIqBU040VnGeM2eA+HjOmTMKuKUPnzlz5iBuaRA4hEf6aA/Cg5jSxwo4gTRO6VMMjPikD1IkfYCBYchJj4IhAQDAdFGHDQ/MYQAAAABJRU5ErkJggg==);
+}
+
+.social-media a.slideshare { /* Data URI */
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAyBAMAAADy2KUxAAAAMFBMVEUAAAAAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIsAUIvXR0VgAAAAD3RSTlMAgO8w37/PIFBAEI9gr5+86WXPAAAA5ElEQVQ4y+3OPWoCQRiH8XezIZgQ2GDSi1XKlZAmVQw5wKZZkiYgeICtrPUGWltZ2CuewBt4lXX9WEX0URm1mRktRfCp/vBjPuTa5fbOrrJJXX/PScHAd0lNjYxfNLA32696bOL4sM7BvWkjE+Rt7EBahScL38IwB0Ujf8Y3ikveSNeKnzrwur28mvzqh5lLdvO16Evq6Mcf/WlDrfsg6YvWG+Pwv+CGYcC36D28APks8CfGItg2FHPBcQYWA1jZOfZgcpyXFo4U297ObbgDqYXbin8s7EZ0HcYtsfmzyEdTrp1qDTYclawaKA/5AAAAAElFTkSuQmCC);
+}
+
+/************************************************************/
+/* Copyright Info *******************************************/
+/************************************************************/
+
+.copyright-info {
+	font-size: 0.8rem;
+	line-height: 1.8;
+	text-align: center;
+	color: #00508B;
+}
+
+@media all and (min-width: 25rem) {
+.copyright-info {
+	line-height: 2.2;
+}
+}
+
+@media all and (min-width: 30rem) {
+.copyright-info {
+	line-height: 2.5;
+}
+}
+
+@media all and (min-width: 37rem) {
+.copyright-info {
+	margin-right: 0.2rem;
+	width: 43%;
+ 	float: right;
+	text-align: right;
+	font-size: 1rem;
+	line-height: 3;
+}
+}
+
+/************************************************************/
+/* Done, Thank you ******************************************/
+/************************************************************/
