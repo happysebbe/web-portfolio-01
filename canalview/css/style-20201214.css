@@ -66,7 +66,7 @@ h1 {
 	font-size: 1.4em; /* Fallback for those who don't support vw */
 	font-size: 8vw;
 	text-transform: uppercase;
-	text-shadow: 0.005em 0.005em #000000, 0 0 5px #000000;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 @media all and (min-width: 25em) {
@@ -80,14 +80,14 @@ h1 {
 h1 {
 	font-size: 3em; /* Fallback for those who don't support vw */
 	font-size: 8vw;
-	text-shadow: 0.01em 0.01em #000000, 0 0 15px #000000;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 }
 
 @media all and (min-width: 50em) {
 h1 {
 	font-size: 5em;
-	text-shadow: 0.02em 0.02em #000000, 0 0 30px #000000;
+	text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 }
 
@@ -131,12 +131,12 @@ nav {	/* Displaying only the Heading in 1-col linear layout */
 	margin: 1%;
 	padding: 1%;
 	height: 1.6em;
-	-webkit-transition: height 1s; /* for old android versions */
-			transition:	height 1s;
+	-webkit-transition: height 0.5s; /* for old android versions */
+			transition:	height 0.5s;
 	overflow: hidden;
 	background-color: #ffffff;
 	border-radius: 0.5em;
-	box-shadow: 0.01em 0.01em #000000, 0 0 10px #000000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media all and (min-width: 18em) {
@@ -178,14 +178,14 @@ nav {
 	width: 26%;
 	height: auto;
 	float: left;
-	box-shadow: 0.01em 0.01em #000000, 0 0 20px #000000;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 }
 
 @media all and (min-width: 50em) {
 nav {
 	width: 16%;
-	box-shadow: 0.02em 0.02em #000000, 0 0 30px #000000;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 }
 
@@ -293,21 +293,21 @@ main {
 	padding: 1%;
 	background-color: #ffffff;
 	border-radius: 0.5em;
-	box-shadow: 0.01em 0.01em #000000, 0 0 10px #000000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media all and (min-width: 37em) {
 main {
 	width: 66%;
 	float: left;
-	box-shadow: 0.01em 0.01em #000000, 0 0 20px #000000;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 }
 
 @media all and (min-width: 50em) {
 main {
 	width: 50%;
-	box-shadow: 0.02em 0.02em #000000, 0 0 30px #000000;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 }
 
@@ -438,7 +438,7 @@ aside {
 	padding: 1%;
 	background-color: #ffffff;
 	border-radius: 0.5em;
-	box-shadow: 0.01em 0.01em #000000, 0 0 10px #000000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media all and (min-width: 37em) {
@@ -447,14 +447,14 @@ aside {
 	/* Here float is used instead of clear for Styling reasons */
 	width: 96%;
 	float: left;
-	box-shadow: 0.01em 0.01em #000000, 0 0 20px #000000;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 }
 
 @media all and (min-width: 50em) {
 aside {
 	width: 22%;
-	box-shadow: 0.02em 0.02em #000000, 0 0 30px #000000;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 }
 
